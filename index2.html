@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>new Site</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        width: 100%;
+        height: 100vh;
+        background: #333;
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+      }
+      .header {
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 70px;
+      }
+      main {
+        width: 70%;
+        height: 200px;
+        background: #101816ec;
+        align-self: center;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px 50px;
+        border-radius: 5px;
+      }
+      button {
+        all: unset;
+        width: fit-content;
+        height: 100%;
+        background: #630303;
+        color: white;
+        justify-self: center;
+        border-radius: 5px;
+        padding: 0 10px;
+      }
+      .alert-massage {
+        text-align: justify;
+        height: 50%;
+        width: 100%;
+        background: #fff;
+        padding: 20px;
+      }
+      .signed-username,
+      .waiting-time {
+        color: rgb(5, 117, 5);
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="title col-lg-4">
+        <h1>Novice WebSite</h1>
+      </div>
+      <div class="contact-us col-lg-4">
+        <div class="telegram"><i class="fab fa-telegram"></i></div>
+        <div class="instagram"><i class="fab fa-instagram"></i></div>
+        <div class="twitter"><i class="fab fa-twitter"></i></div>
+      </div>
+      <div class="logo col-lg-4">
+        <img
+          src="./—Pngtree—black birds and animals flying_4285852.png"
+          alt="site-logo"
+          class="logo-image"
+        />
+      </div>
+    </header>
+    <main>
+      <div class="alert-massage">
+        good! you seccessfully registeried! with
+        <span class="signed-username"></span> username. wait
+        <span class="waiting-time">10</span>seconds for going back to first page
+        or press button!
+      </div>
+      <button type="button" class="finishPage">Finish Waiting Time</button>
+    </main>
+    <script src="script2.js"></script>
+  </body>
+</html>
