@@ -56,7 +56,7 @@ openLogIn();
 function titleAddress() {
   let siteTitle = document.querySelector(".title");
   siteTitle.addEventListener("click", () => {
-    location.assign(`${location.origin}`);
+    location.assign(`${location.href}`);
   });
 }
 titleAddress();
